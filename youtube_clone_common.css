@@ -1,0 +1,12 @@
+p{
+    font-family: Roboto, Arial;
+    margin: 0px;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+  }
+  
+body{
+    margin: 0px;
+}
