@@ -93,24 +93,24 @@
 }
 
 .header-upload{
-    height: 26px;
+    height: 24px;
     cursor: pointer;
 
 }
 
 .header-youtube{
-    height: 26px;
+    height: 24px;
     cursor: pointer;
 }
 
 .header-notification{
-    height: 26px;
+    height: 24px;
     cursor: pointer;
 }
 
 .header-profile{
-    height: 26px;
-    width: 26px;
+    height: 24px;
+    width: 24px;
     border-radius: 15px;
     cursor: pointer;
 }
