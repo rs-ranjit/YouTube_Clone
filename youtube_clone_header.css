@@ -3,7 +3,16 @@
     height: 55px;
     justify-content: space-between;
     margin-bottom: 26px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid rgb(235, 232, 232);
+    box-shadow: 0px 1px 2px rgba(224, 223, 223, 0.15);
+    z-index: 100;
 }
+
 
 .header-left{
     width: 300px;
@@ -38,7 +47,7 @@
     border: 1px solid rgb(240, 240, 240);
     height: 37px;
     flex: 1;
-    min-width: 400px;
+    width: 0px;
     box-shadow: inset 0px 1px 2px rgba(224, 223, 223, 0.15);
     padding-left: 20px; 
     font-size: 16px;
@@ -47,7 +56,7 @@
 
 .header-search-button{
     height: 37px;
-    border: 1px solid rgb(219, 218, 218);
+    border: 1px solid rgb(240, 240, 240);
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     background-color: #f7f7f7;
@@ -55,6 +64,41 @@
     margin-left : 1px;
     cursor: pointer;
     border-left: none;
+}
+
+.header-search-button, .header-voice-button, .upload-container, 
+.app-container, .notifications-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-voice-button .header-hover, 
+.header-search-button .header-hover,
+.upload-container .header-hover,
+.app-container .header-hover,
+.notifications-container .header-hover{
+    background-color: rgba(100, 92, 92);
+    padding: 8px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -30px;
+    font-size: 11px;
+    font-family: Roboto, Arial;
+    font-weight: 100;
+    color: white;
+    white-space: nowrap;
+    display: none;
+}
+
+.header-search-button:hover .header-hover, 
+.header-voice-button:hover .header-hover,
+.upload-container:hover .header-hover,
+.app-container:hover .header-hover,
+.notifications-container:hover .header-hover{
+    display: block;
+    transition: opacity 0.15s;
 }
 
 .header-search-icon{
@@ -72,7 +116,6 @@
     cursor: pointer;
 }
 
-
 .header-voice{
     height: 20px;
 }
@@ -89,7 +132,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 50px;
+    margin-right: 17px;
+    flex-shrink: 0;
 }
 
 .header-upload{
@@ -109,8 +153,8 @@
 }
 
 .header-profile{
-    height: 24px;
-    width: 24px;
-    border-radius: 15px;
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
     cursor: pointer;
 }

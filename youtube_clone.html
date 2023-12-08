@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube Clone</title>
+    <link class="link-logo" rel="icon" href="Youtube_logo.png" >
     <link rel="stylesheet" href="youtube_clone_common.css">
     <link rel="stylesheet" href="youtube_clone_header.css">
+    <link rel="stylesheet" href="left-icons.css">
     <link rel="stylesheet" href="youtube_clone_body_grid.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,25 +25,87 @@
 
         <div class="header-middle">
             <input class="header-search" type="text" placeholder="Search">
-            <button class="header-search-button"><img class="header-search-icon" src="header/search.svg" alt="khoj"></button>
-            <button class="header-voice-button"><img class="header-voice" src="header/voice-search-icon.svg" alt=""></button>
+            <button class="header-search-button">
+                <img class="header-search-icon" src="header/search.svg" alt="khoj">
+                    <div class="header-hover">
+                        Search
+                    </div>
+            </button>
+            <button class="header-voice-button">
+                <img class="header-voice" src="header/voice-search-icon.svg" alt="">
+                    <div class="header-hover">
+                        Search with your voice
+                    </div>
+            </button>
         </div>
 
         <div class="header-right">
-            <img class="header-upload" src="header/upload.svg" alt="">
-            <img class="header-youtube" src="header/youtube-apps.svg" alt="">
-            <img class="header-notification" src="header/notifications.svg" alt="">
-            <img class="header-profile" src="header/profile.png" alt="">
+            <div class="upload-container">
+                <img class="header-upload" src="header/upload.svg" alt="">
+                    <div class="header-hover">
+                        Create
+                    </div>
+            </div>
+            <div class="app-container">
+                <img class="header-youtube" src="header/youtube-apps.svg" alt="">
+                    <div class="header-hover">
+                        YouTube-App
+                    </div>
+            </div>
+            <div class="notifications-container">
+                <img class="header-notification" src="header/notifications.svg" alt="">
+                    <div class="header-hover">
+                        notifications
+                    </div>
+            </div>
+                <img class="header-profile" src="header/profile.png" alt="">  
         </div>
     </div>
 
-    <!--This is the body section-->
+    <!-- Left icons section-->
+    <div class="left-icons-main">
+        <div class="left-icons">
+            <img class="left-icon-logo" src="icons/home.svg" alt="">
+            <small>Home</small>
+        </div>
+
+        <div class="left-icons">
+            <img class="left-icon-logo" src="icons/explore.svg" alt="">
+            <small>Explore</small>
+        </div>
+
+        <div class="left-icons">
+            <img class="left-icon-logo" src="icons/subscriptions.svg" alt="">
+            <small>Subscription</small>
+        </div>
+
+        <div class="left-icons">
+            <img class="left-icon-logo" src="icons/originals.svg" alt="">
+            <small>Originals</small>
+        </div>
+
+        <div class="left-icons">
+            <img class="left-icon-logo" src="icons/youtube-music.svg" alt="">
+            <small>YouTube Music</small>
+        </div>
+
+        <div class="left-icons">
+            <img class="left-icon-logo" src="icons/library.svg" alt="">
+            <small>Library</small>
+        </div>
+
+    </div>
+
+    <!--This is the video section-->
     <div class="video-main">
 
         <div class="video-container">
 
             <div class="video-thumbnail">
                 <img class="thumbnails" src="thumbnails/thumbnail-1.webp" alt="thumbnail-1">
+                    <div class="video-time">
+                        14:20
+                    </div>
             </div>
     
     
@@ -62,6 +126,9 @@
     
             <div class="video-thumbnail">
                 <img class="thumbnails" src="thumbnails/thumbnail-2.webp" alt="thumbnail-1">
+                <div class="video-time">
+                    8:22
+                </div>
             </div>
     
     
@@ -81,6 +148,9 @@
     
                 <div class="video-thumbnail">
                     <img class="thumbnails" src="thumbnails/thumbnail-3.webp" alt="thumbnail-1">
+                    <div class="video-time">
+                        9:13
+                    </div>
                 </div>
         
         
@@ -101,6 +171,9 @@
 
             <div class="video-thumbnail">
                 <img class="thumbnails" src="thumbnails/thumbnail-4.webp" alt="thumbnail-1">
+                <div class="video-time">
+                    22:09
+                </div>
             </div>
     
     
@@ -121,6 +194,9 @@
 
             <div class="video-thumbnail">
                 <img class="thumbnails" src="thumbnails/thumbnail-5.webp" alt="thumbnail-1">
+                <div class="video-time">
+                    11:17
+                </div>
             </div>
     
     
@@ -141,6 +217,9 @@
 
             <div class="video-thumbnail">
                 <img class="thumbnails" src="thumbnails/thumbnail-6.webp" alt="thumbnail-1">
+                <div class="video-time">
+                    19:59
+                </div>
             </div>
     
     
@@ -161,6 +240,9 @@
 
             <div class="video-thumbnail">
                 <img class="thumbnails" src="thumbnails/thumbnail-7.webp" alt="thumbnail-1">
+                <div class="video-time">
+                    10:13
+                </div>
             </div>
     
     
@@ -181,12 +263,107 @@
 
             <div class="video-thumbnail">
                 <img class="thumbnails" src="thumbnails/thumbnail-8.webp" alt="thumbnail-1">
+                <div class="video-time">
+                    7:12
+                </div>
             </div>
     
     
             <div class="video-information"> 
                 <div class="video-channel-pic-container">
                     <img class="video-channel-pic" src="thumbnails/channel-8.jpeg" alt="channel-1"> 
+                </div>
+                <div class="video-channel-data">
+                    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <p class="video-channel">Marques Bronlee</p>
+                    <p class="video-stats"3>3.4M views &#183 6 months ago</p>
+                </div>      
+            </div>
+    
+        </div>
+
+        <div class="video-container">
+
+            <div class="video-thumbnail">
+                <img class="thumbnails" src="thumbnails/thumbnail-6.webp" alt="thumbnail-1">
+                <div class="video-time">
+                    7:12
+                </div>
+            </div>
+    
+    
+            <div class="video-information"> 
+                <div class="video-channel-pic-container">
+                    <img class="video-channel-pic" src="thumbnails/channel-6.jpeg" alt="channel-1"> 
+                </div>
+                <div class="video-channel-data">
+                    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <p class="video-channel">Marques Bronlee</p>
+                    <p class="video-stats"3>3.4M views &#183 6 months ago</p>
+                </div>      
+            </div>
+    
+        </div>
+
+        <div class="video-container">
+
+            <div class="video-thumbnail">
+                <img class="thumbnails" src="thumbnails/thumbnail-4.webp" alt="thumbnail-1">
+                <div class="video-time">
+                    7:12
+                </div>
+            </div>
+    
+    
+            <div class="video-information"> 
+                <div class="video-channel-pic-container">
+                    <img class="video-channel-pic" src="thumbnails/channel-4.jpeg" alt="channel-1"> 
+                </div>
+                <div class="video-channel-data">
+                    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <p class="video-channel">Marques Bronlee</p>
+                    <p class="video-stats"3>3.4M views &#183 6 months ago</p>
+                </div>      
+            </div>
+    
+        </div>
+
+        <div class="video-container">
+
+            <div class="video-thumbnail">
+                <img class="thumbnails" src="thumbnails/thumbnail-1.webp" alt="thumbnail-1">
+                <div class="video-time">
+                    7:12
+                </div>
+            </div>
+    
+    
+            <div class="video-information"> 
+                <div class="video-channel-pic-container">
+                    <img class="video-channel-pic" src="thumbnails/channel-1.jpeg" alt="channel-1"> 
+                </div>
+                <div class="video-channel-data">
+                    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <p class="video-channel">Marques Bronlee</p>
+                    <p class="video-stats"3>3.4M views &#183 6 months ago</p>
+                </div>      
+            </div>
+    
+        </div>
+
+        <div class="video-container">
+
+            <div class="video-thumbnail">
+                <img class="thumbnails" src="thumbnails/thumbnail-2.webp" alt="thumbnail-1">
+                <div class="video-time">
+                    7:12
+                </div>
+            </div>
+    
+    
+            <div class="video-information"> 
+                <div class="video-channel-pic-container">
+                    <img class="video-channel-pic" src="thumbnails/channel-2.jpeg" alt="channel-1"> 
                 </div>
                 <div class="video-channel-data">
                     <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
